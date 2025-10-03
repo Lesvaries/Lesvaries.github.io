@@ -64,12 +64,13 @@ header::before {
     overflow: hidden; /* Empêche l'image de dépasser */
   }
   
-  .profile-picture {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Remplit le cercle sans déformation */
-    border-radius: 50%; /* Rend l'image elle-même circulaire */
+  .profile-icon img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
   }
+  
   
 
 @keyframes float {
@@ -363,5 +364,4 @@ footer {
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
     }
-
 }
