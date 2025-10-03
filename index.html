@@ -1,44 +1,128 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Titre de la page</title>
-  <link rel="stylesheet" href="./docs/css/style.css"> <!-- Lien vers une feuille de style externe -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathis Dupont - Développeur Web</title>
+    <link rel="stylesheet" href="./docs/css/style.css">
 </head>
 <body>
-
-  <!-- En-tête -->
-  <header>
-    <h1>Bienvenue sur mon site</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-  </header>
 
-  <!-- Contenu principal -->
-  <main>
-    <section>
-      <h2>Titre de section</h2>
-      <p>Contenu principal à modifier selon vos besoins.</p>
+    <header id="accueil">
+        <div class="profile-icon">🍎</div>
+        <h1>Mathis Dupont</h1>
+        <p>"C'est de la contrainte que naît le chef-d'œuvre."</p>
+    </header>
+
+    <section id="apropos">
+        <h2>À propos</h2>
+        <div class="about-content">
+            <p>
+                Étudiant en <strong>BTS SIO SLAM</strong> à Saint-Charles Sainte-Croix, j'ai déjà porté plusieurs projets académiques et personnels. Mon objectif est de progresser comme développeur web et d'acquérir une maîtrise solide des outils modernes, en alliant rigueur et créativité.
+            </p>
+        </div>
     </section>
 
-    <!-- Barre latérale -->
-    <aside>
-      <h3>Informations complémentaires</h3>
-      <p>Texte ou liens utiles.</p>
-    </aside>
-  </main>
+    <section id="competences">
+        <h2>Compétences techniques</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>✓ Confirmé</h3>
+                <ul class="skill-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>◐ Intermédiaire</h3>
+                <ul class="skill-list">
+                    <li>PHP</li>
+                    <li>C#</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>◯ En apprentissage</h3>
+                <ul class="skill-list">
+                    <li>JavaScript</li>
+                    <li><strong>Angular</strong> (focus actuel)</li>
+                    <li>TypeScript</li>
+                    <li>Python</li>
+                    <li>PHP MVC</li>
+                    <li>LaTeX, Markdown</li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem; font-size: 1.1rem;">
+            <strong>Outil principal :</strong> VS Code
+        </div>
+    </section>
 
-  <!-- Pied de page -->
-  <footer>
-    <p>&copy; 2025 - Tous droits réservés</p>
-  </footer>
+    <section id="projets">
+        <h2>Projets</h2>
+        <div class="project-card">
+            <div class="project-content">
+                <h3>CSM Wiki Fan</h3>
+                <p>Projet web qui reflète mon niveau actuel en développement. Une plateforme dédiée aux fans, construite avec rigueur et attention aux détails.</p>
+                <a href="http://csm-wiki-fan.42web.io" target="_blank" class="project-link">Voir le projet →</a>
+            </div>
+        </div>
+    </section>
 
+    <section id="parcours">
+        <h2>Parcours académique</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>BTS SIO SLAM</h3>
+                <p>Saint-Charles Sainte-Croix</p>
+                <p style="font-style: italic; color: #666;">En cours</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Stage (5 semaines)</h3>
+                <p>Campus MMA – Section Covéa</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Baccalauréat Général</h3>
+                <p>Formation générale</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="icon">💻</div>
+                <h3>GitHub</h3>
+                <a href="https://github.com/Lesvaries" target="_blank">github.com/Lesvaries</a>
+            </div>
+            <div class="contact-card">
+                <div class="icon">📧</div>
+                <h3>E-mail</h3>
+                <a href="mailto:mathis.dupont@stcharles-stecroix.org">mathis.dupont@stcharles-stecroix.org</a>
+            </div>
+            <div class="contact-card">
+                <div class="icon">📄</div>
+                <h3>CV</h3>
+                <a href="#" download>Télécharger mon CV (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mathis Dupont - Tous droits réservés</p>
+    </footer>
+
+    <script href="docs/js/script.js"></script>
 </body>
 </html>
